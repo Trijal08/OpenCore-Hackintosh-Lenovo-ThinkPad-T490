@@ -437,18 +437,22 @@
             <dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
                 <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,14,0</string>
                     <key>acpi-wake-type</key>
                     <data>AQAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x17,0x0)</key>
                 <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,17,0</string>
                     <key>compatible</key>
                     <string>pci8086,a182</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Internal</string>
+                    <string>Internal@0,1F,3</string>
                     <key>device_type</key>
                     <string>Audio device</string>
                     <key>model</key>
@@ -456,10 +460,14 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
+                    <key>AAPL,GfxYTile</key>
+                    <integer>1</integer>
                     <key>AAPL,ig-platform-id</key>
                     <data>CQClPg==</data>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,2,0</string>
+                    <key>AAPL00,override-no-connect</key>
+                    <data>AP///////wAwrqlAAAAAAAAcAQSVHxF44naQlFVUkCchUFQAAAABAQEBAQEBAQEBAQEBAQEBODaAoHA4IEAYMDwANa0QAAAZXiuAoHA4IEAYMDwANa0QAAAZAAAADwDRCTDRCTAeCgAmz30FAAAA/gBSMTQwTldGNSBSQSAKACc=</data>
                     <key>device-id</key>
                     <data>pT4AAA==</data>
                     <key>device_type</key>
@@ -471,7 +479,7 @@
                     <key>framebuffer-con2-busid</key>
                     <data>AgAAAA==</data>
                     <key>framebuffer-con2-enable</key>
-                    <data>AQAAAA==</data>
+                    <integer>1</integer>
                     <key>framebuffer-con2-flags</key>
                     <data>xwMAAA==</data>
                     <key>framebuffer-con2-has-lspcon</key>
@@ -480,10 +488,14 @@
                     <data>EgAAAA==</data>
                     <key>framebuffer-con2-type</key>
                     <data>AAgAAA==</data>
+                    <key>framebuffer-fbmem</key>
+                    <data>AACQAA==</data>
                     <key>framebuffer-flags</key>
                     <data>CgvjAA==</data>
                     <key>framebuffer-patch-enable</key>
-                    <data>AQAAAA==</data>
+                    <integer>1</integer>
+                    <key>framebuffer-stolenmem</key>
+                    <data>AAAwAQ==</data>
                     <key>framebuffer-unifiedmem</key>
                     <data>AAAAgA==</data>
                     <key>hda-gfx</key>
@@ -1367,6 +1379,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>Display-26cf-57d.kext</string>
+                    <key>Comment</key>
+                    <string>V9.9.9</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>XHCI-unsupported.kext</string>
                     <key>Comment</key>
                     <string>V0.9.2</string>
@@ -1540,7 +1570,7 @@
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
-                <string>System</string>
+                <string>Full</string>
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
@@ -1691,7 +1721,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-lilubetaall alcid=97 unfairgva=4 gfxrst=1 igfxrpsc=1 -igfxblt -igfxbls igfxagdc=0 -wegnoegpu TSC_sync_margin=0 revpatch=sbvmm</string>
+                    <string>-lilubetaall alcid=97 igfxrpsc=1 igfxonln=1 -igfxblt -igfxblr -igfxbls igfxagdc=0 gfxrst=1 -wegnoegpu TSC_sync_margin=0 revpatch=sbvmm</string>
                     <key>csr-active-config</key>
                     <data>AADw/w==</data>
                     <key>prev-lang:kbd</key>
