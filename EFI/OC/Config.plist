@@ -1509,11 +1509,11 @@
                 <key>DisableIoMapper</key>
                 <true/>
                 <key>DisableIoMapperMapping</key>
-                <false/>
+                <true/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
-                <false/>
+                <true/>
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
@@ -1525,7 +1525,7 @@
                 <key>IncreasePciBarSize</key>
                 <false/>
                 <key>LapicKernelPanic</key>
-                <false/>
+                <true/>
                 <key>LegacyCommpage</key>
                 <false/>
                 <key>PanicNoKextDump</key>
@@ -1570,7 +1570,7 @@
                 <key>InstanceIdentifier</key>
                 <string></string>
                 <key>LauncherOption</key>
-                <string>Full</string>
+                <string>System</string>
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
@@ -1721,7 +1721,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-lilubetaall alcid=97 igfxrpsc=1 igfxonln=1 -igfxblt -igfxblr -igfxbls igfxagdc=0 gfxrst=1 -wegnoegpu TSC_sync_margin=0 revpatch=sbvmm</string>
+                    <string>-lilubetaall alcid=97 watchdog=0 igfxonln=1 agdpmod=vit9696 unfairgva=4 gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxfw=2 igfxagdc=0 -wegnoegpu TSC_sync_margin=0 revpatch=sbvmm</string>
                     <key>csr-active-config</key>
                     <data>AADw/w==</data>
                     <key>prev-lang:kbd</key>
@@ -2289,7 +2289,7 @@
                 <key>TscSyncTimeout</key>
                 <integer>0</integer>
                 <key>UnblockFsConnect</key>
-                <false/>
+                <true/>
             </dict>
             <key>ReservedMemory</key>
             <array/>
