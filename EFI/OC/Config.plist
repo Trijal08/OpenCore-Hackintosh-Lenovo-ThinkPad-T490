@@ -401,6 +401,8 @@
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>built-in</string>
+                    <key>acpi-wake-type</key>
+                    <integer>1</integer>
                     <key>device_type</key>
                     <string>USB controller</string>
                 </dict>
