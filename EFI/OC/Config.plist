@@ -60,23 +60,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>SSDT-YVPC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-RCSM.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-MCHC.aml</string>
+                    <string>SSDT-SBUS-MCHC.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -141,14 +125,6 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-ThinkPad_ClickPad-PS2Map-AtoZ.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-XOSI.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -335,36 +311,6 @@
                     <key>TableSignature</key>
                     <data></data>
                 </dict>
-                <dict>
-                    <key>Base</key>
-                    <string></string>
-                    <key>BaseSkip</key>
-                    <integer>0</integer>
-                    <key>Comment</key>
-                    <string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>X09TSQ==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>WE9TSQ==</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data></data>
-                </dict>
             </array>
             <key>Quirks</key>
             <dict>
@@ -454,16 +400,18 @@
                 <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Internal@0,14,0</string>
-                    <key>acpi-wake-type</key>
-                    <data>AQAAAA==</data>
+                    <string>built-in</string>
+                    <key>device_type</key>
+                    <string>USB controller</string>
                 </dict>
-                <key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>Internal@0,17,0</string>
-                    <key>compatible</key>
-                    <string>pci8086,a182</string>
+                    <string>built-in</string>
+                    <key>device_type</key>
+                    <string>USB controller</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 USB 3.1 Controller (Low Power) [Alpine Ridge LP 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
@@ -471,6 +419,8 @@
                     <string>Internal@0,1F,3</string>
                     <key>device_type</key>
                     <string>Audio device</string>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
                     <key>model</key>
                     <string>Realtek® ALC3827 with Dolby® Audio™ Premium</string>
                 </dict>
@@ -555,13 +505,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RTCMemoryFixup.kext</string>
+                    <string>ForgedInvariant.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.7</string>
+                    <string>V1.0.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RTCMemoryFixup</string>
+                    <string>Contents/MacOS/ForgedInvariant</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -573,13 +523,13 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>ForgedInvariant.kext</string>
+                    <string>RTCMemoryFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.0</string>
+                    <string>V1.0.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
-                    <string>Contents/MacOS/ForgedInvariant</string>
+                    <string>Contents/MacOS/RTCMemoryFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -953,7 +903,7 @@
                     <key>BundlePath</key>
                     <string>VoodooRMI.kext</string>
                     <key>Comment</key>
-                    <string>V1.4.0</string>
+                    <string>V1.3.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1401,6 +1351,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>ThunderboltReset.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.0d1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/ThunderboltReset</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
                     <string>V1.6.6</string>
@@ -1531,11 +1499,11 @@
                 <key>DisableIoMapper</key>
                 <true/>
                 <key>DisableIoMapperMapping</key>
-                <true/>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
-                <true/>
+                <false/>
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
@@ -1547,7 +1515,7 @@
                 <key>IncreasePciBarSize</key>
                 <false/>
                 <key>LapicKernelPanic</key>
-                <true/>
+                <false/>
                 <key>LegacyCommpage</key>
                 <false/>
                 <key>PanicNoKextDump</key>
@@ -1732,8 +1700,6 @@
                 <dict>
                     <key>DefaultBackgroundColor</key>
                     <data>AAAAAA==</data>
-                    <key>UIScale</key>
-                    <data>AQ==</data>
                 </dict>
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
@@ -1743,7 +1709,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-lilubetaall alcid=97 watchdog=0  revpatch=auto,sbvmm igfxonln=1 agdpmod=vit9696 unfairgva=4 gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxfw=2 igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu</string>
+                    <string>-lilubetaall alcid=97 revpatch=auto,sbvmm gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxfw=2 igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
                     <key>csr-active-config</key>
                     <data>AADw/w==</data>
                     <key>prev-lang:kbd</key>
@@ -1786,7 +1752,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>FVF0391004N0000FB</string>
+                <string>C02052310QXJH4RJA</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1798,11 +1764,11 @@
                 <key>SystemMemoryStatus</key>
                 <string>Upgradable</string>
                 <key>SystemProductName</key>
-                <string>MacBookPro15,4</string>
+                <string>MacBookPro15,2</string>
                 <key>SystemSerialNumber</key>
-                <string>FVFDG0S8L40Y</string>
+                <string>C02DWPYJJHCC</string>
                 <key>SystemUUID</key>
-                <string>B625F878-5B19-4901-A9E9-FB0FD0D0FFFE</string>
+                <string>325BF5A0-44C7-4D06-9FD6-6D978ABA71DB</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -2120,7 +2086,7 @@
                 </dict>
                 <dict>
                     <key>Arguments</key>
-                    <string></string>
+                    <string>--preserve-boot</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
@@ -2311,10 +2277,23 @@
                 <key>TscSyncTimeout</key>
                 <integer>0</integer>
                 <key>UnblockFsConnect</key>
-                <true/>
+                <false/>
             </dict>
             <key>ReservedMemory</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Address</key>
+                    <integer>569344</integer>
+                    <key>Comment</key>
+                    <string>Fix hibernation black screen</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Size</key>
+                    <integer>4096</integer>
+                    <key>Type</key>
+                    <string>RuntimeCode</string>
+                </dict>
+            </array>
         </dict>
     </dict>
 </plist>
