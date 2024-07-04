@@ -525,24 +525,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>RTCMemoryFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.7</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RTCMemoryFixup</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>BrightnessKeys.kext</string>
                     <key>Comment</key>
                     <string>V1.0.3</string>
@@ -784,24 +766,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IOElectrify</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>HibernationFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.5.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/HibernationFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1711,7 +1675,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-lilubetaall alcid=97 revpatch=auto,sbvmm gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxfw=2 igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
+                    <string>-lilubetaall alcid=97 revpatch=auto,sbvmm agdpmod=vit9696 igfxfw=2 igfxonln=1 gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
                     <key>csr-active-config</key>
                     <data>AADw/w==</data>
                     <key>prev-lang:kbd</key>
