@@ -397,23 +397,200 @@
         <dict>
             <key>Add</key>
             <dict>
+                <key>PciRoot(0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,0,0</string>
+                    <key>device_type</key>
+                    <string>Host bridge</string>
+                    <key>model</key>
+                    <string>Coffee Lake HOST and DRAM Controller</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x12,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,18,0</string>
+                    <key>device_type</key>
+                    <string>Signal processing controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP Thermal Controller</string>
+                </dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>built-in</string>
+                    <string>Internal@0,20,0</string>
                     <key>acpi-wake-type</key>
                     <integer>1</integer>
                     <key>device_type</key>
                     <string>USB controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP USB 3.1 xHCI Controller</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x2)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,20,2</string>
+                    <key>device_type</key>
+                    <string>RAM memory</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP Shared SRAM</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x14,0x3)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,20,3</string>
+                    <key>device_type</key>
+                    <string>Network controller</string>
+                    <key>model</key>
+                    <string>Intel Wireless AC9560</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x15,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,21,0</string>
+                    <key>device_type</key>
+                    <string>Serial bus controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP Serial IO I2C Controller #0</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x16,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,22,0</string>
+                    <key>device_type</key>
+                    <string>Communication controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP MEI Controller #1</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x16,0x3)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,22,3</string>
+                    <key>device_type</key>
+                    <string>Serial controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP Keyboard and Text (KT) Redirection</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP PCI Express Root Port #1</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,0/0,0</string>
+                    <key>device_type</key>
+                    <string>Card reader</string>
+                    <key>model</key>
+                    <string>RTS522A PCI Express Card Reader</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP PCI Express Root Port #5</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4/0,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 Bridge (Low Power) [Alpine Ridge LP 2016]</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4/0,0/0,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 Bridge (Low Power) [Alpine Ridge LP 2016]</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4/0,0/0,0/0,0</string>
+                    <key>device_type</key>
+                    <string>System peripheral</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 NHI (Low Power) [Alpine Ridge LP 2016]</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x1,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4/0,0/1,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 Bridge (Low Power) [Alpine Ridge LP 2016]</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,28,4/0,0/2,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>JHL6240 Thunderbolt 3 Bridge (Low Power) [Alpine Ridge LP 2016]</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
-                    <string>built-in</string>
+                    <string>Internal@0,28,4/0,0/2,0/0,0</string>
                     <key>device_type</key>
                     <string>USB controller</string>
                     <key>model</key>
                     <string>JHL6240 Thunderbolt 3 USB 3.1 Controller (Low Power) [Alpine Ridge LP 2016]</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,29,0</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP PCI Express Root Port #9</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1D,0x4)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,29,4</string>
+                    <key>device_type</key>
+                    <string>PCI bridge</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP PCI Express Root Port #13</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,29,4/0,0</string>
+                    <key>device-id</key>
+                    <data>BqgAAA==</data>
+                    <key>device_type</key>
+                    <string>Non-Volatile memory controller</string>
+                    <key>model</key>
+                    <string>RTS5765DL NVMe SSD Controller (DRAM-less)</string>
+                    <key>vendor-id</key>
+                    <data>TRQAAA==</data>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,0</string>
+                    <key>device_type</key>
+                    <string>ISA bridge</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP LPC Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
@@ -424,14 +601,41 @@
                     <key>hda-gfx</key>
                     <string>onboard-1</string>
                     <key>model</key>
-                    <string>Realtek® ALC3827 with Dolby® Audio™ Premium</string>
+                    <string>Realtek ALC3827/257 with Dolby Audio Premium</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,4</string>
+                    <key>device_type</key>
+                    <string>SMBus</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP SMBus Controller</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x5)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,5</string>
+                    <key>device_type</key>
+                    <string>Serial bus controller</string>
+                    <key>model</key>
+                    <string>Cannon Point-LP SPI Controller</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x1F,0x6)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,31,6</string>
+                    <key>device_type</key>
+                    <string>Ethernet controller</string>
+                    <key>model</key>
+                    <string>Ethernet Connection (6) I219-LM</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
                     <key>AAPL,GfxYTile</key>
                     <integer>1</integer>
                     <key>AAPL,ig-platform-id</key>
-                    <data>CQCbPg==</data>
+                    <data>AACbPg==</data>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,2,0</string>
                     <key>AAPL00,override-no-connect</key>
@@ -458,6 +662,24 @@
                     <string>onboard-1</string>
                     <key>model</key>
                     <string>Intel UHD Graphics 620</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,4,0</string>
+                    <key>device_type</key>
+                    <string>Signal processing controller</string>
+                    <key>model</key>
+                    <string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem</string>
+                </dict>
+                <key>PciRoot(0x0)/Pci(0x8,0x0)</key>
+                <dict>
+                    <key>AAPL,slot-name</key>
+                    <string>Internal@0,8,0</string>
+                    <key>device_type</key>
+                    <string>System peripheral</string>
+                    <key>model</key>
+                    <string>Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -615,6 +837,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>SMCProcessor.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.2</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCProcessor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
                     <string>V1.3.2</string>
@@ -658,24 +898,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCLightSensor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>SMCProcessor.kext</string>
-                    <key>Comment</key>
-                    <string>V1.3.2</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCProcessor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -820,24 +1042,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VoodooPS2Keyboard</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>15.0.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.6</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/VoodooPS2Trackpad</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1121,7 +1325,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothInjector.kext</string>
                     <key>Comment</key>
-                    <string>V2.4.0</string>
+                    <string>V2.5.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1139,7 +1343,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.8</string>
+                    <string>V2.6.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1155,7 +1359,7 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>HoRNDIS9.2.kext</string>
+                    <string>HoRNDIS.kext</string>
                     <key>Comment</key>
                     <string>V9.2</string>
                     <key>Enabled</key>
@@ -1675,7 +1879,7 @@
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
                     <key>boot-args</key>
-                    <string>-lilubetaall alcid=97 revpatch=auto,sbvmm agdpmod=vit9696 igfxfw=2 igfxonln=1 gfxrst=1 -igfxblr -igfxblt -igfxbls -noDC9 igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
+                    <string>-lilubetaall alcid=97 revpatch=auto,sbvmm igfxrpsc=1 igfxfw=2 igfxpavp=1 igfxonln=1 gfxrst=1 -igfxblr -igfxblt -igfxbls igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
                     <key>csr-active-config</key>
                     <data>AADw/w==</data>
                     <key>prev-lang:kbd</key>
@@ -1716,15 +1920,15 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
-                <false/>
+                <true/>
                 <key>MLB</key>
-                <string>C02052310QXJH4RJA</string>
+                <string>C02908303QXJH4R1M</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>BB5kuFEn</data>
+                <data>lPajQMns</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -1732,9 +1936,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro15,2</string>
                 <key>SystemSerialNumber</key>
-                <string>C02DWPYJJHCC</string>
+                <string>C02Y90P1JHCC</string>
                 <key>SystemUUID</key>
-                <string>325BF5A0-44C7-4D06-9FD6-6D978ABA71DB</string>
+                <string>03FB60A6-B1C8-4F5A-B070-38729AD524F2</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
