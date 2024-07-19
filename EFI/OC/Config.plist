@@ -652,6 +652,8 @@
                     <integer>1</integer>
                     <key>framebuffer-fbmem</key>
                     <data>AACQAA==</data>
+                    <key>framebuffer-flags</key>
+                    <data>CgvjAA==</data>
                     <key>framebuffer-patch-enable</key>
                     <integer>1</integer>
                     <key>framebuffer-stolenmem</key>
@@ -1313,7 +1315,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
-                    <string></string>
+                    <string>24.0.0</string>
                     <key>MinKernel</key>
                     <string></string>
                     <key>PlistPath</key>
@@ -1331,7 +1333,7 @@
                     <key>ExecutablePath</key>
                     <string></string>
                     <key>MaxKernel</key>
-                    <string>19.0.0</string>
+                    <string>20.99.99</string>
                     <key>MinKernel</key>
                     <string></string>
                     <key>PlistPath</key>
