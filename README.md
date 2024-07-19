@@ -5,7 +5,7 @@
 
 
 ## Prequisites
-If you don't have the same T490 - Type 20N3 as me, make sure to disable "UTBMap.kext" in Config.plist and enable "UTBDefault.kext" instead. However, I highly reccomend you map the USB ports and generate a newly created "UTBMap.kext" with the help of [USBToolbox](https://github.com/USBToolBox/tool/releases/latest) instead! (again, no need to do that anymore) In order for Wi-Fi to work on macOS Sequoia (15), you MUST download & install an application named HeliPort.dmg from the [HeliPort](https://github.com/diepeterpan/HeliPort/releases/latest) GitHub repository (I have updated the link to a more stable version, so update to that if you already haven't done so). It is also recommended that you install the latest release version of an app named YogaSMC from the [YogaSMC](https://github.com/zhen-zen/YogaSMC/releases/latest) GitHub repository. Double click the "YogaSMCPane.prefPane" file in the "YogaSMC-App-Release.dmg" file and drag the "YogaSMCNC.app" file to "Applications" folder. ~~If you are thinking of using a macOS version before Ventura 13.3; replace the boot-arg "-igfxblt" with "-igfxblr" in **NVRAM/Add/7C436110-AB2A-4BBB-A880-FE41995C9F82/boot-args**.~~ (no need for that anymore!)
+If you don't have the T490 - Type 20N3 like me, make sure to disable "UTBMap.kext" in Config.plist and enable "UTBDefault.kext" instead. However, I highly reccomend you map the USB ports and generate a newly created "UTBMap.kext" with the help of [USBToolbox](https://github.com/USBToolBox/tool/releases/latest) instead! In order for Wi-Fi to work on macOS Sequoia (15), you MUST download & install an application named HeliPort.dmg from the [HeliPort](https://github.com/diepeterpan/HeliPort/releases/latest) GitHub repository (I have updated the link to a more stable version, so update to that if you already haven't done so). It is also recommended that you install the latest release version of an app named YogaSMC from the [YogaSMC](https://github.com/zhen-zen/YogaSMC/releases/latest) GitHub repository. Double click the "YogaSMCPane.prefPane" file in the "YogaSMC-App-Release.dmg" file and drag the "YogaSMCNC.app" file to "Applications" folder. ~~If you are thinking of using a macOS version before Ventura 13.3; replace the boot-arg "-igfxblt" with "-igfxblr" in **NVRAM/Add/7C436110-AB2A-4BBB-A880-FE41995C9F82/boot-args**.~~ (no need for that anymore!)
 
 ## My Specifications/Specs
 
@@ -21,7 +21,7 @@ If you don't have the same T490 - Type 20N3 as me, make sure to disable "UTBMap.
 |**SSD**|NVMe M.2 AGI512GIMAI298 512GB SSD|
 |**WLAN+BT**|Intel® Wireless-AC 9560 (A BCM card natively supported by real Macs will work more stable)|
 |**Audio**|Realtek ALC3287 (ALC257 codec)|
-|**Ports**|2xUSB3.0 Type-A, 2xUSB Type-C, HDMI, Micro SD card reader, Headphone Jack, and Thunderbolt charging port|
+|**Ports**|2xUSB3.0 Type-A, 2xThunderbolt 3, HDMI, Micro SD card reader, and Headphone Jack|
 |**OpenCore Bootloader**|V1.0.1 MOD (Will constantly be updated, including the kexts/drivers, so all you have to do is come back after a month or so and look for a commit along the lines of "Updated OpenCore to X.X.X MOD!" or check the latest release for something like that)
 
 ## BIOS/UEFI Settings
@@ -36,7 +36,6 @@ Category | Setting
 
 ## Not Working
 
-- Hibernation (won't cause a problem though, as I disabled it in OpenCore)
 - You tell me?!
 
 ## Working
@@ -54,6 +53,7 @@ Category | Setting
 - Brightness (and the keys for it)
 - Touchscreen (if you don't have one, make sure you know how to map USB ports [here](#prequisites))
 - Sidecar (Continuity and Handoff work too)
+- Hibernation (it is working now!)
 
 ## Conclusion
 
