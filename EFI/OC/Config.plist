@@ -1315,7 +1315,7 @@
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBTPatcher</string>
                     <key>MaxKernel</key>
-                    <string>24.0.0</string>
+                    <string>23.99.99</string>
                     <key>MinKernel</key>
                     <string></string>
                     <key>PlistPath</key>
@@ -1880,6 +1880,10 @@
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
+                    <key>bluetoothExternalDongleFailed</key>
+                    <data>AA==</data>
+                    <key>bluetoothInternalControllerInfo</key>
+                    <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
                     <string>-lilubetaall alcid=97 revpatch=auto,sbvmm igfxrpsc=1 igfxfw=2 igfxpavp=1 igfxonln=1 gfxrst=1 -igfxblr -igfxblt -igfxbls igfxagdc=0 -igfxlspcon -cdfon -wegnoegpu -btlfxallowanyaddr</string>
                     <key>csr-active-config</key>
