@@ -1,7 +1,7 @@
 # OpenCore Hackintosh EFI for Lenovo ThinkPad T490
 *Based on the OpenCore bootloader; off of the [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg) made by [acidanthera](https://github.com/acidanthera) hosted on GitHub. Followed the [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/) to get everything working from scratch for the best stability and compatibility! Make sure you also follow the [prequisites](#prequisites) and [UEFI settings](#biosuefi-settings)! If you find my work useful, please consider supporting me at [Ko-Fi](https://ko-fi.com/gamerboy1234294)❤️*
 
-**WARNING/DISCLAIMER (VERY IMPORTANT)**: This EFI only supports running macOS Big Sur (11) to macOS Sequoia (15)!
+**WARNING/DISCLAIMER (VERY IMPORTANT)**: This EFI only supports running macOS Big Sur (11.x) to macOS Sequoia (15.x)! Also, bluetooth DOES NOT work starting from macOS Sequoia Public Beta 2/Developer Beta 4!
 
 
 ## Prequisites
