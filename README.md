@@ -51,7 +51,7 @@ Category | Setting
 - Sleep
 - Micro SDHC/SDXC card reader
 - Brightness (and the keys for it)
-- Touchscreen (if you don't have one, make sure you know how to map USB ports [here](#prequisites))
+- Touchscreen
 - Sidecar (Continuity and Handoff work too)
 - Hibernation (it is working now!)
 
