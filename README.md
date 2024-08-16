@@ -4,7 +4,7 @@
 **WARNING/DISCLAIMER (VERY IMPORTANT)**: This EFI only supports running macOS Big Sur (11.x) to macOS Sequoia (15.x)! Also, bluetooth DOES NOT work starting from macOS Sequoia Public Beta 2/Developer Beta 4!
 
 
-## Prequisites
+## Prerequisites
 If you don't have the T490 - Type 20N3 like me, make sure to disable "UTBMap.kext" in Config.plist and enable "UTBDefault.kext" instead. However, I highly reccomend you map the USB ports and generate a newly created "UTBMap.kext" with the help of [USBToolbox](https://github.com/USBToolBox/tool/releases/latest) instead! In order for Wi-Fi to work on macOS Sequoia (15), you MUST download & install an application named HeliPort.dmg from the [HeliPort](https://github.com/diepeterpan/HeliPort/releases/latest) GitHub repository (I have updated the link to a more stable version, so update to that if you already haven't done so). It is also recommended that you install the latest release version of an app named YogaSMC from the [YogaSMC](https://github.com/zhen-zen/YogaSMC/releases/latest) GitHub repository. Double click the "YogaSMCPane.prefPane" file in the "YogaSMC-App-Release.dmg" file and drag the "YogaSMCNC.app" file to "Applications" folder. ~~If you are thinking of using a macOS version before Ventura 13.3; replace the boot-arg "-igfxblt" with "-igfxblr" in **NVRAM/Add/7C436110-AB2A-4BBB-A880-FE41995C9F82/boot-args**.~~ (no need for that anymore!)
 
 ## My Specifications/Specs
