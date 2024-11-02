@@ -156,7 +156,13 @@ To use the provided `vBiosInsert.sh` script:
  - Locate an appropriate version of the `nvflash` tool (Nvidia) or `amdvbflash` tool (AMD) (both are available for
    Linux and Windows), which can be used to read from and write to the GPU firmware.
  - Use that tool to read a copy of the GPU firmware.
- - Run `./vBiosInsertEfi.sh [-a|-n] {original}.rom EnableGop.efi {modified}.rom`, with `-a` for AMD and `-n` for Nvidia.
+ - Run `./vBiosInsert.sh [-a|-n] {original}.rom EnableGop.efi {modified}.rom`, with `-a` for AMD and `-n` for Nvidia.
+    - If you have any problems with `vBiosInsert.sh` from a specific release
+    of EnableGop, please try the version included with the latest release of OpenCore
+    before reporting any issues.
+    The script receives updates to support additional graphics cards independently
+    of any bumps to the release version of EnableGop. If you need to, you can use
+    the latest version of `vBiosInsert.sh` to inject older versions of EnableGop.
  - The new file `{modified}.rom` may be burnt to the GPU firmware.
 
 In the case of AMD, considerably less space is normally available, due to a strict limit of 128k for legacy and EFI 
